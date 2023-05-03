@@ -37,6 +37,11 @@ function App() {
   const [count,setCount]= useState(0);
   return (
     <div className="App">
+      <a href="#"><h1 
+      style={{
+        color:"blue"                     
+        }}
+    >ShopIndia.in</h1></a>
       <div className='cart-value'>
         <Badge bg="danger">
 Cart {count}
@@ -79,7 +84,6 @@ function Product({prod,count,setCount}){
   }
   return (
     <div>
-
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src= {prod.productImage} />
       <Card.Body>
