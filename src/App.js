@@ -1,7 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import img from "./11rphone.webp";
 import {Badge, Button,Card} from "react-bootstrap";
 import { useState } from 'react';
+ 
+
 
 function App() {
   const data = [
@@ -28,7 +31,7 @@ function App() {
     },
     {
       productImage:
-        "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/617MPEZB5mL._SL1500_.jpg",
+        img,
       productName: "Oneplus 11",
       price: 64000,
       rating: 50,
@@ -83,7 +86,7 @@ function Product({prod,count,setCount}){
      
   }
   return (
-    <div>
+    <div className='card'>
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src= {prod.productImage} />
       <Card.Body>
